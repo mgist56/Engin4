@@ -1,22 +1,34 @@
 #Quadratic Solver
 #Meg Gist
 
-print("Quadratic Solver")
+from math import sqrt
 
 def solve(a, b, c):
-    d = b ** 2 - 4 * a * c # this calculates the discriminant
-    roots = []
+        a = int(a)
+        b = int(b)
+        c = int(c)
 
-    if d < 0: # if the discriminant is negative, there are no real roots
-        roots = ["There are no", "real roots"]
-    else:
-        roots = [round((-b + math.sqrt(d)) / 2 * a, 2), round((-b - math.sqrt(d)) / 2 * a, 2)] # this line finds both roots and adds them to a list
-
+        disc = ((b**2) - (4*a*c))
+        if 0 > disc:
+                return "none"
+        roots = []
+        for i in range(2):
+                root1 = round((-b + sqrt((b**2) - (2*a))),2)
+                root2 = round((-b + sqrt((b**2) + (2*a))),2)
+                root = [root1,root2]
+                if root not in roots:
+                        roots.append(root)
     return roots
 
-print("Enter the coefficients for ax^2 + bx + c = 0")
+print("Enter the coefficients where ax^2 + bx + c = 0:")
+ain = input()
+bin = input()
+cin = input()
 
-a = input("a value: ")
-b = input("b value: ")
-c = input("c value: ")
-print(solve(a,b,c)[0], solve(a,b,c)[1])
+if solve(ain,bin,cin)  == "none":
+        print("There are no real roots")
+
+if len(solve(ain,bin,cin)) == 1:
+
+elif len(solve(ain,bin,cin)) == 2:
+        print("There are two real roots at", solve[0], "and", solve[1])
