@@ -11,3 +11,5 @@ https://stackoverflow.com/questions/53549973/how-to-replace-characters-within-st
 https://stackoverflow.com/questions/29409273/how-to-split-string-without-spaces-into-list-of-integers-in-python
 
 https://www.kite.com/python/answers/how-to-find-the-position-of-an-element-in-an-array-in-python
+
+https://stackoverflow.com/questions/2582138/finding-and-replacing-elements-in-a-list
