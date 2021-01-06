@@ -4,7 +4,34 @@ Engineering 4, baby. Documentation is here!
 https://github.com/chssigma/Markdown_Cheatsheet
 
 ## Table of Contents
+
 [Hello Python](#hello-python)
+
+[01 Calculator](#01-calculator)
+
+[02 Quadratic Solver](#02-quadratic-solver)
+
+[03 Strings and Loops](#03-strings-and-loops)
+
+[Python Challenge MSP](#python0-challenge-msp)
+
+[GPIO Pins: Bash](#gpio-pins:-bash)
+
+[GPIO Pins: Python](#gpio-pins:-python)
+
+[GPIO Pins: SSH](#gpio-pins:-ssh)
+
+[GPIO Pins: I2C](#gpio-pins:-i2c)
+
+[Headless](#headless)
+
+[Hello Flask](#hello-flask)
+
+[GPIO Pins: Flask](#gpio-pins:-flask)
+
+[Pi Camera](#pi-camera)
+
+[Copypasta](#copypasta)
 
 ## Hello Python
  
