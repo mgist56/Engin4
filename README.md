@@ -13,21 +13,21 @@ https://github.com/chssigma/Markdown_Cheatsheet
 
 [03 Strings and Loops](#03-strings-and-loops)
 
-[Python Challenge MSP](#python0-challenge-msp)
+[Python Challenge MSP](#python-challenge-msp)
 
-[GPIO Pins: Bash](#gpio-pins:-bash)
+[GPIO Pins: Bash](#gpio-pins-bash)
 
-[GPIO Pins: Python](#gpio-pins:-python)
+[GPIO Pins: Python](#gpio-pins-python)
 
-[GPIO Pins: SSH](#gpio-pins:-ssh)
+[GPIO Pins: SSH](#gpio-pins-ssh)
 
-[GPIO Pins: I2C](#gpio-pins:-i2c)
+[GPIO Pins: I2C](#gpio-pins-i2c)
 
 [Headless](#headless)
 
 [Hello Flask](#hello-flask)
 
-[GPIO Pins: Flask](#gpio-pins:-flask)
+[GPIO Pins: Flask](#gpio-pins-flask)
 
 [Pi Camera](#pi-camera)
 
