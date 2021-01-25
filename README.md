@@ -131,11 +131,12 @@ In this assignment, I was initially bamboozled by the program that we were using
  
  
 ## GPIO Pins: I2C
- 
-### Resources
- 
+https://cvilleschools.instructure.com/courses/31073/assignments/258549?module_item_id=797049
+
+The objective of this assingment is to display accelerometer data on a screen using the Rasperry Pi while connecing wirelessly using the IP adress.
+
 ### Takeaways
- 
+This assingment took a lot longer than we originally anticipated and it is quite relieving to have finally completed it. We essentially had the correct code composed, but the lack of "disp.display()" prevented the screen from displaying the data. There was also an odd line that was hidden because of copying and pasting the code, so now we are synching with Replit.
  
 ## Headless
  
