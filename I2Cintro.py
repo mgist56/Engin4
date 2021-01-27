@@ -62,7 +62,7 @@ while True:
     
     draw.text((x, top),'Accel X={0}, Y={1}, Z={2}'.format(accel_x, accel_y, accel_z), font=font, fill=255)
     # two different lines to prevent overlap
-    draw.text((x, top+5),'Mag X={0}, Y={1}, Z={2}'.format(mag_x, mag_y, mag_z), font=font, fill=255)
+    draw.text((x, top+10),'Mag X={0}, Y={1}, Z={2}'.format(mag_x, mag_y, mag_z), font=font, fill=255)
 
     disp.image(image)
     # disp.display() is needeed here
