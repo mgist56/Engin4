@@ -14,9 +14,6 @@ lsm303 = Adafruit_LSM303.LSM303()
 
 # pi pin configuration
 RST = 24
-# DC = 23
-# SPI_PORT = 0
-# SPI_DEVICE = 0
 # i2cdetect -y 1 to find adress
 
 # 128x32 display with hardware I2C:
@@ -24,10 +21,6 @@ disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
 # initializes library
 disp.begin()
-
-# clears the display
-disp.clear()
-disp.display()
 
 # create a blank image to draw on
 # mode '1' for one bit colour
@@ -51,10 +44,13 @@ x = 1
 font = ImageFont.load_default()
 
 while True:
+    disp.display()
+    time.sleep(0.5)
+    disp.clear()
     # read X, Y, Z values and print them
     accel, mag = lsm303.read()
-    accel_x, accel_y, accel_z = accel
-    mag_x, mag_y, mag_z = mag
+    accel_y = accel
+    mag_y = mag
     # type in the accel results
     
     # draw a black box to prevent overlap
@@ -64,6 +60,3 @@ while True:
 
     disp.image(image)
     # disp.display() is needeed here
-    disp.display()
-    time.sleep(0.5)
-    disp.clear()
