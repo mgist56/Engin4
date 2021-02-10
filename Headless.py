@@ -43,39 +43,32 @@ x = 1
 # loads the default font
 font = ImageFont.load_default()
 
-x_values = []
-y_values = []
-points = []
+xval = []
+yval = []
 
 for i in range(26):
-  x_values.append(i*5)
+  xval.append(i*5)
 
 33.125
 
 while True:
-    print(points)
-    disp.display()
-    time.sleep(0.5)
-    disp.clear()
-    
-    accel, mag = lsm303.read()
-    a, accel_y, b = accel
-    mag_y = mag
-    # type in the accel results
-    y = round((accel_y / 33),2)
-    y_values.append(y)
-    
-    points.append([])
-    # draw.line((1,y,128,y), fill=255
-    draw.line((1, 1, 1, 64), fill=255)
-    draw.line((1, 63, 126, 63), fill=255)
-    # add second draw.line to pi
-      
-  for d in y_values:
-    draw.line(x_values[index(d)], y_values[index(d)], x_values[index(d)+1],)
+  print("yval:", yval)
+  print("xval:", xval)
+  disp.display()
+  time.sleep(0.5)
+  disp.clear()
 
-    disp.image(image)
-    # disp.display() is needeed here
-
-    # ImageDraw.line(points, fill=None, width=1, joint=None)
-    # syntax to draw a line
+  accel, mag = lsm303.read()
+  a, accel_y, b = accel
+  mag_y = mag
+  # type in the accel results
+  y = round((accel_y / 33),2)
+  yval.append(y)
+  
+  # draw.line((1,y,128,y), fill=255
+  draw.line((1, 1, 1, 64), fill=255)
+  draw.line((1, 63, 126, 63), fill=255)
+  # add secon draw.line to
+  
+  for d in yval:
+    draw.line(yval.index(d), yval.index(d), yval.ind
