@@ -53,8 +53,6 @@ for i in range(26):
 33.125
 
 while True:
-
-
     print(points)
     disp.display()
     time.sleep(0.5)
