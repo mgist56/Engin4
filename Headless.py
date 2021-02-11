@@ -52,8 +52,6 @@ for i in range(26):
 33.125
 
 while True:
-  print("yval:", yval)
-  print("xval:", xval)
   disp.display()
   time.sleep(0.5)
   disp.clear()
@@ -64,11 +62,16 @@ while True:
   # type in the accel results
   y = round((accel_y / 33),2)
   yval.append(y)
+
+  print("yval:", yval)
+  print("xval:", xval)
   
   # draw.line((1,y,128,y), fill=255
   draw.line((1, 1, 1, 64), fill=255)
   draw.line((1, 63, 126, 63), fill=255)
   # add secon draw.line to
   
-  for d in yval:
-    draw.line(yval.index(d), yval.index(d), yval.ind
+  if len(yval) > 1:
+    for d in yval:
+      draw.line((xval[yval.index(d)], d, xval[yval.index(d)-1], yval[yval.index(d)-1]), fill=255)
+#draw.line(yval.index(d), yval.index(d), yval.index(d)+1)
