@@ -1,5 +1,7 @@
 # Headless
 # By Rowan & Meg
+# ђєɭɭ๏
+
 import time
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_SSD1306
@@ -49,7 +51,7 @@ yval = []
 for i in range(26):
   xval.append(i*5)
 
-33.125
+# dimensions of screen: 64X128
 
 while True:
   disp.display()
@@ -60,18 +62,25 @@ while True:
   a, accel_y, b = accel
   mag_y = mag
   # type in the accel results
-  y = round((accel_y / 33),2)
+  y = round((accel_y / 17),2)
   yval.append(y)
 
-  print("yval:", yval)
-  print("xval:", xval)
+  # print("yval:", yval)
+  # print("xval:", xval)
   
-  # draw.line((1,y,128,y), fill=255
-  draw.line((1, 1, 1, 64), fill=255)
+  draw.line((1, 1, 1, 63), fill=255)
   draw.line((1, 63, 126, 63), fill=255)
+  # here are the axis
   # add secon draw.line to
   
   if len(yval) > 1:
-    for d in yval:
-      draw.line((xval[yval.index(d)], d, xval[yval.index(d)-1], yval[yval.index(d)-1]), fill=255)
-#draw.line(yval.index(d), yval.index(d), yval.index(d)+1)
+    for i, d in enumerate(yval):
+      x1 = xval[i]
+      y1 = 64 - d
+      x2 = xval[i-1]
+      y2 = 64 - yval[i-1]
+      print((x1, y1, x2, y2))
+      draw.line((x1, y1, x2, y2), fill=255)
+
+  disp.image(image)
+  disp.display()
