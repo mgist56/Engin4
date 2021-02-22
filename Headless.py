@@ -62,25 +62,29 @@ while True:
   a, accel_y, b = accel
   mag_y = mag
   # type in the accel results
-  y = round((accel_y / 17),2)
+  y = round((accel_y / 10),2)
+  if len(yval) > 25:
+    yval.pop(0) 
   yval.append(y)
-
-  # print("yval:", yval)
-  # print("xval:", xval)
   
   draw.line((1, 1, 1, 63), fill=255)
   draw.line((1, 63, 126, 63), fill=255)
-  # here are the axis
-  # add secon draw.line to
+  # here are the axes
   
   if len(yval) > 1:
+    if len(yval) > 25:5:
+        draw.rectangle((0,0,width,height), outline=0, fill=0)
+        draw.line((1, 1, 1, 63), fill=255)
+        draw.line((1, 63, 126, 63), fill=255)
     for i, d in enumerate(yval):
-      x1 = xval[i]
-      y1 = 64 - d
-      x2 = xval[i-1]
-      y2 = 64 - yval[i-1]
-      print((x1, y1, x2, y2))
-      draw.line((x1, y1, x2, y2), fill=255)
+      if i > 0:
+        x1 = xval[i]
+        y1 = 64 - d
+        x2 = xval[i-1]
+        y2 = 64 - yval[i-1]
+        print((x1, y1, x2, y2))
+        print(d)
+        draw.line((x1, y1, x2, y2), fill=255)
 
   disp.image(image)
   disp.display()
