@@ -138,11 +138,14 @@ The objective of this assingment is to display accelerometer data on a screen us
 ### Takeaways
 This assingment took a lot longer than we originally anticipated and it is quite relieving to have finally completed it. We essentially had the correct code composed, but the lack of "disp.display()" prevented the screen from displaying the data. There was also an odd line that was hidden because of copying and pasting the code, so now we are synching with Replit.
  
+
 ## Headless
- 
-### Resources
- 
+https://cvilleschools.instructure.com/courses/31073/assignments/258553?module_item_id=797050
+
+The objective of this assingment is to display accelerometer data on a screen in a graph format on the Raspberry Pi while connecting wirelessly using the IP adress.
+
 ### Takeaways
+This assignment took a lot longer than either Rowan and I anticipated or hoped that it would. Notes: Don't be afraid to mix multiple statments/loops together. That was definitely not the most aesthetically pleasing but it was effective and saved us hair pulling. It's a good idea to print out data when the visuals are weird. That makes it a whole lot easier to visualize where the proplem is and fix it.
  
  
 ## Hello Flask
