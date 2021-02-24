@@ -152,7 +152,9 @@ The objective of this assignment is to connect the Raspberry Pi as a web server 
 ### Takeaways
 I do not have access to a working Raspberry Pi at this point in time, so I followed along while Rowan completed the assignment on his end. Setting up the Pi as a web server is very neat and I hope that we will be able to incorperate that element into our project when we get to it somehow.
  
+ 
 ## Pi Camera
+https://cvilleschools.instructure.com/courses/31073/assignments/258559?module_item_id=797051
  
 ### Resources
  
