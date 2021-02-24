@@ -27,11 +27,7 @@ https://github.com/chssigma/Markdown_Cheatsheet
  
 [Hello Flask](#hello-flask)
  
-[GPIO Pins: Flask](#gpio-pins-flask)
- 
 [Pi Camera](#pi-camera)
- 
-[Copypasta](#copypasta)
  
 ## Hello Python
 https://cvilleschools.instructure.com/courses/31073/assignments/258557?module_item_id=797037
@@ -149,18 +145,12 @@ This assignment took a lot longer than either Rowan and I anticipated or hoped t
  
  
 ## Hello Flask
+https://cvilleschools.instructure.com/courses/31073/assignments/258554?module_item_id=797047
  
-### Resources
- 
+The objective of this assignment is to connect the Raspberry Pi as a web server and run a program through it.
+
 ### Takeaways
- 
- 
-## GPIO Pins: Flask
- 
-### Resources
- 
-### Takeaways
- 
+I do not have access to a working Raspberry Pi at this point in time, so I followed along while Rowan completed the assignment on his end. Setting up the Pi as a web server is very neat and I hope that we will be able to incorperate that element into our project when we get to it somehow.
  
 ## Pi Camera
  
@@ -168,9 +158,3 @@ This assignment took a lot longer than either Rowan and I anticipated or hoped t
  
 ### Takeaways
  
- 
-## Copypasta
- 
-### Resources
- 
-### Takeaways
