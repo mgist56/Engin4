@@ -155,8 +155,8 @@ I do not have access to a working Raspberry Pi at this point in time, so I follo
  
 ## Pi Camera
 https://cvilleschools.instructure.com/courses/31073/assignments/258559?module_item_id=797051
- 
-### Resources
- 
+
+The objective of this assignment is to successfully take a picture using a camera synched to the Raspberry Pi.
+
 ### Takeaways
- 
+Again, the lack of working hardware made it a little difficult to complete the assingment. Rowan was able to set up his camera and take a picture. It's fantastic that it worked and the quality was that good, especially for something so small.
